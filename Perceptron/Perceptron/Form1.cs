@@ -62,13 +62,13 @@ namespace Perceptron
 
         private void Train(int[][] inputs, int[] targets, double learningRate,int NumofEpoch)
         {
-            Random rnd = new Random(new Random().Next());
+            Random rnd = new Random();
             for (int i = 0; i < weights.Length; i++)
             {
-                while (weights[i] != 0)
+                do
                 {
                     weights[i] = rnd.Next(-1, 1);
-                }
+                } while (weights[i] == 0);
             }  
 
             for (int i = 0; i < NumOfEpoch; i++)

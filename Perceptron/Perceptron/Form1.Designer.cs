@@ -37,7 +37,6 @@
             this.PredictButton = new System.Windows.Forms.Button();
             this.TrainButton = new System.Windows.Forms.Button();
             this.OutputText = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.x21radio = new System.Windows.Forms.RadioButton();
             this.x20radio = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,6 +47,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.x10radio = new System.Windows.Forms.RadioButton();
             this.x11radio = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 36);
+            this.label1.Location = new System.Drawing.Point(62, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 16);
             this.label1.TabIndex = 0;
@@ -63,14 +63,14 @@
             // 
             // LRateText
             // 
-            this.LRateText.Location = new System.Drawing.Point(168, 33);
+            this.LRateText.Location = new System.Drawing.Point(200, 79);
             this.LRateText.Name = "LRateText";
             this.LRateText.Size = new System.Drawing.Size(157, 22);
             this.LRateText.TabIndex = 1;
             // 
             // NumEpochText
             // 
-            this.NumEpochText.Location = new System.Drawing.Point(168, 61);
+            this.NumEpochText.Location = new System.Drawing.Point(200, 107);
             this.NumEpochText.Name = "NumEpochText";
             this.NumEpochText.Size = new System.Drawing.Size(157, 22);
             this.NumEpochText.TabIndex = 3;
@@ -78,16 +78,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 61);
+            this.label2.Location = new System.Drawing.Point(70, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 16);
+            this.label2.Size = new System.Drawing.Size(114, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Number of Epoch: ";
+            this.label2.Text = "Number of Epoch:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(133, 95);
+            this.label3.Location = new System.Drawing.Point(165, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(19, 16);
             this.label3.TabIndex = 4;
@@ -96,7 +96,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(133, 122);
+            this.label4.Location = new System.Drawing.Point(165, 168);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(19, 16);
             this.label4.TabIndex = 5;
@@ -104,9 +104,9 @@
             // 
             // PredictButton
             // 
-            this.PredictButton.Location = new System.Drawing.Point(220, 169);
+            this.PredictButton.Location = new System.Drawing.Point(252, 206);
             this.PredictButton.Name = "PredictButton";
-            this.PredictButton.Size = new System.Drawing.Size(75, 23);
+            this.PredictButton.Size = new System.Drawing.Size(75, 32);
             this.PredictButton.TabIndex = 8;
             this.PredictButton.Text = "Predict";
             this.PredictButton.UseVisualStyleBackColor = true;
@@ -114,9 +114,9 @@
             // 
             // TrainButton
             // 
-            this.TrainButton.Location = new System.Drawing.Point(128, 169);
+            this.TrainButton.Location = new System.Drawing.Point(160, 206);
             this.TrainButton.Name = "TrainButton";
-            this.TrainButton.Size = new System.Drawing.Size(75, 23);
+            this.TrainButton.Size = new System.Drawing.Size(75, 32);
             this.TrainButton.TabIndex = 9;
             this.TrainButton.Text = "Train";
             this.TrainButton.UseVisualStyleBackColor = true;
@@ -125,25 +125,17 @@
             // OutputText
             // 
             this.OutputText.AutoSize = true;
-            this.OutputText.Location = new System.Drawing.Point(125, 218);
+            this.OutputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OutputText.Location = new System.Drawing.Point(64, 257);
             this.OutputText.Name = "OutputText";
-            this.OutputText.Size = new System.Drawing.Size(51, 16);
+            this.OutputText.Size = new System.Drawing.Size(77, 20);
             this.OutputText.TabIndex = 10;
             this.OutputText.Text = "Output: ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(351, 218);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 16);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Logic Gate: ";
             // 
             // x21radio
             // 
             this.x21radio.AutoSize = true;
-            this.x21radio.Location = new System.Drawing.Point(168, 124);
+            this.x21radio.Location = new System.Drawing.Point(200, 170);
             this.x21radio.Name = "x21radio";
             this.x21radio.Size = new System.Drawing.Size(35, 20);
             this.x21radio.TabIndex = 18;
@@ -154,7 +146,7 @@
             // x20radio
             // 
             this.x20radio.AutoSize = true;
-            this.x20radio.Location = new System.Drawing.Point(220, 124);
+            this.x20radio.Location = new System.Drawing.Point(252, 170);
             this.x20radio.Name = "x20radio";
             this.x20radio.Size = new System.Drawing.Size(35, 20);
             this.x20radio.TabIndex = 19;
@@ -168,7 +160,7 @@
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Location = new System.Drawing.Point(354, 24);
+            this.groupBox1.Location = new System.Drawing.Point(386, 70);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(163, 168);
             this.groupBox1.TabIndex = 20;
@@ -228,7 +220,7 @@
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox2.Controls.Add(this.x10radio);
             this.groupBox2.Controls.Add(this.x11radio);
-            this.groupBox2.Location = new System.Drawing.Point(168, 89);
+            this.groupBox2.Location = new System.Drawing.Point(200, 135);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(87, 24);
             this.groupBox2.TabIndex = 21;
@@ -256,15 +248,25 @@
             this.x11radio.Text = "1";
             this.x11radio.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(108, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(355, 29);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Simple Logic Gates Predictor";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 263);
+            this.ClientSize = new System.Drawing.Size(593, 304);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.x20radio);
             this.Controls.Add(this.x21radio);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.OutputText);
             this.Controls.Add(this.TrainButton);
             this.Controls.Add(this.PredictButton);
@@ -298,7 +300,6 @@
         private System.Windows.Forms.Button PredictButton;
         private System.Windows.Forms.Button TrainButton;
         private System.Windows.Forms.Label OutputText;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton x21radio;
         private System.Windows.Forms.RadioButton x20radio;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -309,6 +310,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton x10radio;
         private System.Windows.Forms.RadioButton x11radio;
+        private System.Windows.Forms.Label label5;
     }
 }
 
