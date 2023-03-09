@@ -30,8 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.LRateText = new System.Windows.Forms.TextBox();
-            this.NumEpochText = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.PredictButton = new System.Windows.Forms.Button();
@@ -48,6 +46,7 @@
             this.x10radio = new System.Windows.Forms.RadioButton();
             this.x11radio = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
+            this.Epochlabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -68,26 +67,10 @@
             this.LRateText.Size = new System.Drawing.Size(157, 22);
             this.LRateText.TabIndex = 1;
             // 
-            // NumEpochText
-            // 
-            this.NumEpochText.Location = new System.Drawing.Point(200, 107);
-            this.NumEpochText.Name = "NumEpochText";
-            this.NumEpochText.Size = new System.Drawing.Size(157, 22);
-            this.NumEpochText.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 108);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Number of Epoch:";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(165, 141);
+            this.label3.Location = new System.Drawing.Point(165, 113);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(19, 16);
             this.label3.TabIndex = 4;
@@ -96,7 +79,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(165, 168);
+            this.label4.Location = new System.Drawing.Point(165, 140);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(19, 16);
             this.label4.TabIndex = 5;
@@ -104,17 +87,17 @@
             // 
             // PredictButton
             // 
-            this.PredictButton.Location = new System.Drawing.Point(252, 206);
+            this.PredictButton.Location = new System.Drawing.Point(252, 178);
             this.PredictButton.Name = "PredictButton";
             this.PredictButton.Size = new System.Drawing.Size(75, 32);
             this.PredictButton.TabIndex = 8;
-            this.PredictButton.Text = "Predict";
+            this.PredictButton.Text = "Output";
             this.PredictButton.UseVisualStyleBackColor = true;
             this.PredictButton.Click += new System.EventHandler(this.PredictButton_Click);
             // 
             // TrainButton
             // 
-            this.TrainButton.Location = new System.Drawing.Point(160, 206);
+            this.TrainButton.Location = new System.Drawing.Point(160, 178);
             this.TrainButton.Name = "TrainButton";
             this.TrainButton.Size = new System.Drawing.Size(75, 32);
             this.TrainButton.TabIndex = 9;
@@ -126,7 +109,7 @@
             // 
             this.OutputText.AutoSize = true;
             this.OutputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OutputText.Location = new System.Drawing.Point(64, 257);
+            this.OutputText.Location = new System.Drawing.Point(61, 246);
             this.OutputText.Name = "OutputText";
             this.OutputText.Size = new System.Drawing.Size(77, 20);
             this.OutputText.TabIndex = 10;
@@ -135,7 +118,7 @@
             // x21radio
             // 
             this.x21radio.AutoSize = true;
-            this.x21radio.Location = new System.Drawing.Point(200, 170);
+            this.x21radio.Location = new System.Drawing.Point(200, 142);
             this.x21radio.Name = "x21radio";
             this.x21radio.Size = new System.Drawing.Size(35, 20);
             this.x21radio.TabIndex = 18;
@@ -146,7 +129,7 @@
             // x20radio
             // 
             this.x20radio.AutoSize = true;
-            this.x20radio.Location = new System.Drawing.Point(252, 170);
+            this.x20radio.Location = new System.Drawing.Point(252, 142);
             this.x20radio.Name = "x20radio";
             this.x20radio.Size = new System.Drawing.Size(35, 20);
             this.x20radio.TabIndex = 19;
@@ -220,7 +203,7 @@
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox2.Controls.Add(this.x10radio);
             this.groupBox2.Controls.Add(this.x11radio);
-            this.groupBox2.Location = new System.Drawing.Point(200, 135);
+            this.groupBox2.Location = new System.Drawing.Point(200, 107);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(87, 24);
             this.groupBox2.TabIndex = 21;
@@ -254,15 +237,26 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(108, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(355, 29);
+            this.label5.Size = new System.Drawing.Size(377, 29);
             this.label5.TabIndex = 22;
-            this.label5.Text = "Simple Logic Gates Predictor";
+            this.label5.Text = "Simple Logic Gates Perceptron";
+            // 
+            // Epochlabel
+            // 
+            this.Epochlabel.AutoSize = true;
+            this.Epochlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Epochlabel.Location = new System.Drawing.Point(210, 246);
+            this.Epochlabel.Name = "Epochlabel";
+            this.Epochlabel.Size = new System.Drawing.Size(67, 20);
+            this.Epochlabel.TabIndex = 23;
+            this.Epochlabel.Text = "Epoch:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 304);
+            this.ClientSize = new System.Drawing.Size(593, 282);
+            this.Controls.Add(this.Epochlabel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.x20radio);
@@ -272,8 +266,6 @@
             this.Controls.Add(this.PredictButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.NumEpochText);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.LRateText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
@@ -293,8 +285,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox LRateText;
-        private System.Windows.Forms.TextBox NumEpochText;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button PredictButton;
@@ -311,6 +301,7 @@
         private System.Windows.Forms.RadioButton x10radio;
         private System.Windows.Forms.RadioButton x11radio;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label Epochlabel;
     }
 }
 
